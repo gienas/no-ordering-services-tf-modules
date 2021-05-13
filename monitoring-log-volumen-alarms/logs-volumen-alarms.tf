@@ -1,6 +1,6 @@
 resource "aws_cloudwatch_metric_alarm" "incoming_log_events_anomaly" {
 
-  alarm_name                = "Incoming log events to loggroup ${var.log_group_name}"
+  alarm_name                = "Incoming log events to log group ${var.log_group_name}"
   comparison_operator       = "GreaterThanUpperThreshold"
   evaluation_periods        = "6"
   threshold_metric_id       = "ad1"
@@ -36,7 +36,7 @@ resource "aws_cloudwatch_metric_alarm" "incoming_log_events_anomaly" {
 
 resource "aws_cloudwatch_metric_alarm" "incoming_bytes_anomaly" {
 
-  alarm_name                = "Incoming bytes to loggroup ${var.log_group_name}"
+  alarm_name                = "Incoming bytes to log group ${var.log_group_name}"
   comparison_operator       = "GreaterThanUpperThreshold"
   evaluation_periods        = "6"
   threshold_metric_id       = "ad1"
